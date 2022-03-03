@@ -1,0 +1,26 @@
+.header-block {
+   text-align: center;
+   letter-spacing: 0.2px;
+   &__title {
+      line-height: 142%;
+      font-weight: 700;
+      font-size: 40px;
+      &:not(:last-child){
+         margin-bottom: 10px;
+      }
+   }
+   @media (max-width:992px) {
+      .header-block__title {
+         font-size: 35px;
+      }
+   }
+   @media (max-width:767px) {
+      .header-block__title {
+         font-size: 30px;
+      }
+   }
+   &__sub-title {
+      line-height: 142%;
+      color: #737373;
+   }
+}
