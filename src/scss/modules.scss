@@ -8,15 +8,11 @@
       &:not(:last-child){
          margin-bottom: 10px;
       }
-   }
-   @media (max-width:992px) {
-      .header-block__title {
-         font-size: 35px;
+      @media (max-width:992px) {
+            font-size: 35px;
       }
-   }
-   @media (max-width:767px) {
-      .header-block__title {
-         font-size: 30px;
+      @media (max-width:767px) {
+            font-size: 30px;
       }
    }
    &__sub-title {
