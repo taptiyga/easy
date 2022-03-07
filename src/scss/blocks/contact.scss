@@ -1,0 +1,49 @@
+.contact {
+   background-color: #fff;
+   padding: 42px 0;
+
+   &__body {
+      @media (min-width:767px) {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+   }
+   &__content {
+      padding: 0 0 20px 0;
+      @media (min-width:767px){
+         padding: 0 20px 0 0;
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      letter-spacing: 0.1px;
+      font-size: 24px;
+      line-height: 133%;
+      &:not(:last-child){
+         margin: 0 0 10px 0;
+      }
+   }
+
+   &__text {
+      color: #737373;
+      line-height: 142%;
+   }
+
+   &__button {
+      display: flex;
+      background-color: #ff7b47; 
+      border-radius: 5px;
+      min-height: 58px;
+      padding: 5px 40px;
+      transition: background-color 0.3s ease 0s;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      &:hover{
+         background-color: #aa5330; 
+      }
+   }
+}
