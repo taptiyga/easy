@@ -50,6 +50,9 @@
       color: #737373;
       font-weight: 600;
       line-height: calc(24/14*100%);
+      &:hover{
+         text-decoration: underline;
+      }
       @media (max-width: 479px){
             font-size: 18px;
       }

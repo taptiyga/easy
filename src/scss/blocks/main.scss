@@ -53,13 +53,22 @@
       line-height: 150%;
       padding: 5px 36px;
       margin: 10px 0;
+      transition: all 0.3s ease 0s;
       &-orange{
          background: #ff7b47;
          color: #fff;
+         &:hover{
+            background-color: #fff;
+            color: #ff7b47;
+         }
       }
       &-border {
          color: #0d5c63;
          border: 1px solid #0d5c63;
+         &:hover{
+            background-color: #0d5c63;
+            color: #fff;
+         }
       }
    }
    @media(max-width:479px){

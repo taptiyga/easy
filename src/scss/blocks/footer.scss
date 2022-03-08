@@ -1,0 +1,120 @@
+.footer {
+
+   &__top {
+      background: #17213c;
+      padding: 35px 0;
+   }
+
+   &__row{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+   }
+
+   &__column {
+      padding: 15px 15px;
+      flex: 0 1 16.667%;
+      &:last-child{
+         flex: 0 1 33.334%;
+      }
+      @media (max-width:992px) {
+         flex: 0 1 25%;
+      }
+      @media (max-width:767px) {
+         flex: 0 1 50%;
+      }
+   }
+
+
+   &__label {
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      margin: 0 0 20px 0;
+   }
+
+   &__bottom {
+      padding: 25px 0;
+   }
+
+   &__container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      @media (max-width:767px) {
+         flex-direction: column;
+      }
+      
+   }
+
+   &__copy {
+      color: #737373;
+      line-height: 171%;
+      @media (max-width:767px) {
+         margin: 0 0 15px 0;;
+      }
+   }
+}
+@media (max-width:992px){
+   .footer__column:last-child{
+      flex: 1 1 100%;
+   }
+}
+.menu-footer {
+
+   &__item {
+      &:not(:last-child){
+         margin: 0 0 10px 0;
+      }
+   }
+
+   &__link {
+      display: inline-block;
+      color: #fff;
+      line-height: 171%;
+      letter-spacing: 0.2px;
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+}
+.contacts-footer {
+   display: flex;
+   flex-direction: column;
+
+   &__item {
+      padding: 0 0 0 34px;
+      line-height: 142%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      min-height: 30px;
+      &:not(:last-child){
+         margin: 0 0 12px 0;
+      }
+      &:hover{
+         text-decoration: underline;
+      }
+      &_phone {
+         background: url(../../img/footer/01.svg) 0 0 no-repeat;
+      }
+
+      &_map {
+         background: url(../../img/footer/02.svg) 0 0 no-repeat;
+      }
+
+      &_email {
+         background: url(../../img/footer/03.svg) 0 0 no-repeat;
+      }
+   }
+}
+.social {
+   display: flex;
+   align-items: center;
+   &__item {
+      &:not(:last-child){
+         margin: 0 20px 0 0;
+      }
+   }
+}
